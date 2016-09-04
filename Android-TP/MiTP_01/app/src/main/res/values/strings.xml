@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Mi TP_01</string>
+    <string name="nombre">Ingrese Nombre</string>
+    <string name="apellido">Ingrese Apellido</string>
+    <string name="usuario">Ingrese Usuario</string>
+    <string name="email">Ingrese Email</string>
+    <string name="clave">Ingrese Clave</string>
+    <string name="rclave">Reingresá la Clave</string>
+    <string name="btnRegistrarse">Registrarse</string>
+    <string name="btnIngresar">Ingresar</string>
+    <string name="checkRecor">Recordame</string>
+    <string name="textoBienvenida">Bienvenidos a mi APP</string>
+    <string name="textoSubtitulo">La aplicación que te ayudará a recordar.</string>
+    <string name="usuarioEmail">Ingrese tu usuario o email</string>
+    <string name="usuarioClave">Ingresa tu clave</string>
+</resources>
