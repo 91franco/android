@@ -46,6 +46,11 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/editText" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:text="@string/usuarioEmail"
             android:ems="10"
@@ -58,6 +63,22 @@
             android:text="@string/usuarioClave"
             android:ems="10"
             android:id="@+id/edPassword" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:context="com.example.alumno.mitp_01.MainActivity"
+            android:weightSum="1">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkRecor"
+                android:id="@+id/checkBox" />
+
+        </LinearLayout>
     </LinearLayout>
+
 </LinearLayout>
 
