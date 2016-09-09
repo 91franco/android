@@ -5,16 +5,24 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.Layout;
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity  implements MiClick {
+
+    @Override
+    public void seHizoClick (int position){
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
 
         List<Persona> personas = new ArrayList<>();
         personas.add((new Persona ("Nombre1","Apellido1")));
@@ -29,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         personas.add((new Persona("Nombre10", "Apellido10")));
 
         RecyclerView rv = (RecyclerView) findViewById(R.id.rvPersona);
-        MiAdapter miAdapter = new MiAdapter(personas);
+        MiAdapter miAdapter = new MiAdapter(personas,this);
 
         rv.setAdapter(miAdapter);
         RecyclerView.LayoutManager manager= new LinearLayoutManager(this);
