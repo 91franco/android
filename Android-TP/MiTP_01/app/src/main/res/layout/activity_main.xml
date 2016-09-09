@@ -64,19 +64,40 @@
             android:ems="10"
             android:id="@+id/edPassword" />
 
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkRecor"
+            android:id="@+id/checkRecor" />
+
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
             android:orientation="horizontal"
             tools:context="com.example.alumno.mitp_01.MainActivity"
             android:weightSum="1">
 
-            <CheckBox
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_weight="0.5"
+                android:layout_margin="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/checkRecor"
-                android:id="@+id/checkBox" />
+                android:text="@string/btnRegistrarse"
+                android:id="@+id/btnRegistrarse"
+                android:textAllCaps="false"
+                android:background="#7bafe8" />
 
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_weight="0.5"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnIngresar"
+                android:id="@+id/btnIngresar"
+                android:textAllCaps="false"
+                android:background="#7bafe8" />
         </LinearLayout>
     </LinearLayout>
 
