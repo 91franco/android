@@ -26,7 +26,7 @@ public class MiAdapter extends RecyclerView.Adapter<MiViewHolder> {
 
     @Override
     public void onBindViewHolder(MiViewHolder holder, int position) {
-
+        holder.index=position;
         holder.tvApellido.setText(personas.get(position).getApellido());
         holder.tvNombre.setText(personas.get(position).getNombre());
     }
