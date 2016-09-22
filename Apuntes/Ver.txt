@@ -1,0 +1,8 @@
+MATIASRAMOS@GMAIL.COM
+MARIANOLOPEZSENES@GMAIL.COM
+
+intents
+	-explicitos
+	-implicitos
+menu
+preferences

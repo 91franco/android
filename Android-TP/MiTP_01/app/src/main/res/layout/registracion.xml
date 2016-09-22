@@ -5,7 +5,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.alumno.mitp_01.MainActivity"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:scrollbars="vertical">
+
 
     <ImageView
         android:layout_width="90dp"
@@ -30,23 +32,37 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/textoSubtitulo"
+        android:text="@string/textoSubtitulo2"
         android:layout_gravity="center"
         android:id="@+id/textSubtitulo" />
 
-    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context="com.example.alumno.mitp_01.MainActivity"
-        android:weightSum="1">
-
+        android:orientation="vertical">
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+         <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/nombre"
+            android:ems="10"
+            android:id="@+id/edNombre" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/editText" />
+            android:inputType="textPersonName"
+            android:hint="@string/apellido"
+            android:ems="10"
+            android:id="@+id/edApellido" />
 
         <EditText
             android:layout_width="match_parent"
@@ -59,47 +75,38 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/usuarioClave"
+            android:inputType="textPersonName"
+            android:hint="@string/clave"
             android:ems="10"
-            android:id="@+id/edPassword"
-            android:inputType="textPassword" />
+            android:id="@+id/edClave" />
 
-        <CheckBox
-            android:layout_width="wrap_content"
+        <EditText
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/checkRecor"
-            android:id="@+id/checkRecor" />
+            android:inputType="textPersonName"
+            android:hint="@string/rclave"
+            android:ems="10"
+            android:id="@+id/edConfClave" />
 
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:orientation="horizontal"
-            tools:context="com.example.alumno.mitp_01.MainActivity"
-            android:weightSum="1">
 
-            <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_weight="0.5"
-                android:layout_margin="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/btnRegistrarse"
-                android:id="@+id/btnRegistrarse"
-                android:textAllCaps="false"
-                android:background="#7bafe8" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-            <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_weight="0.5"
-                android:layout_margin="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/btnIngresar"
-                android:id="@+id/btnIngresar"
-                android:textAllCaps="false"
-                android:background="#7bafe8" />
-        </LinearLayout>
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="163dp"
+            android:layout_height="36dp"
+            android:text="@string/btnRegistrarse"
+            android:id="@+id/btnRegistrarse"
+            android:layout_gravity="center_horizontal|top"
+            android:textAllCaps="false"
+            android:background="#7bafe8" />
+
     </LinearLayout>
 
+    </LinearLayout >
+    </ScrollView>
 </LinearLayout>
 

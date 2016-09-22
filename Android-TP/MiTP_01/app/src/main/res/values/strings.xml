@@ -11,6 +11,7 @@
     <string name="checkRecor">Recordarme</string>
     <string name="textoBienvenida">Bienvenidos a mi APP</string>
     <string name="textoSubtitulo">La aplicación que te ayudará a recordar.</string>
+    <string name="textoSubtitulo2">Formulario de registro</string>
     <string name="usuarioEmail">Ingrese tu usuario o email</string>
     <string name="usuarioClave">Ingresa tu clave</string>
 </resources>
