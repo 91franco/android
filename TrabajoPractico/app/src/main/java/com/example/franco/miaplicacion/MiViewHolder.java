@@ -1,0 +1,28 @@
+package com.example.franco.miaplicacion;
+
+import android.support.v7.widget.RecyclerView;
+import android.util.Log;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+/**
+ * Created by Franco on 25/09/2016.
+ */
+
+
+public class MiViewHolder  extends RecyclerView.ViewHolder {
+    public TextView txtNombre;
+    public TextView txtDescripcion;
+    public ImageView imgVwImagen;
+    public int index;
+    public Controlador controlador;
+
+    public MiViewHolder(View view){
+        super(view);
+        this.txtNombre = (TextView) view.findViewById(R.id.txtCatNombre);
+        this.txtDescripcion = (TextView) view.findViewById(R.id.txtCatDescripcion);
+        this.imgVwImagen = (ImageView) view.findViewById(R.id.imgVwImagen);
+    }
+
+}
