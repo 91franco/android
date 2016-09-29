@@ -10,8 +10,8 @@ public class RegistrarseActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registrarse);
 
-        Controlador controlador = new Controlador();
-        Vista vista = new Vista(this,controlador);
+        ControladorRegistrarse controlador = new ControladorRegistrarse();
+        VistaRegistrarse vista = new VistaRegistrarse(this,controlador);
 
         controlador.setVista(vista);
     }

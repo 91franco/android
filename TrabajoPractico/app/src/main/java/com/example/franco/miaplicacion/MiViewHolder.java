@@ -1,7 +1,6 @@
 package com.example.franco.miaplicacion;
 
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -16,7 +15,7 @@ public class MiViewHolder  extends RecyclerView.ViewHolder {
     public TextView txtDescripcion;
     public ImageView imgVwImagen;
     public int index;
-    public Controlador controlador;
+    public ControladorNuevaCategoria controladorNuevaCategoria;
 
     public MiViewHolder(View view){
         super(view);

@@ -48,7 +48,7 @@
             android:id="@+id/btnCargarFoto"
             android:layout_gravity="center_horizontal"
             android:src="@android:drawable/ic_menu_camera"
-            android:backgroundTint="#3d792d"/>
+            android:backgroundTint="#3d792d" />
 
         <Space
             android:layout_width="match_parent"
@@ -76,7 +76,8 @@
                 android:text="@string/cat_crear"
                 android:background="@color/colorBotones"
                 android:layout_margin="10dp"
-                android:layout_weight="0.5" />
+                android:layout_weight="0.5"
+                android:id="@+id/btnCrearCategoria"/>
 
         </LinearLayout>
 

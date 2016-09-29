@@ -46,6 +46,10 @@ public class Usuario {
 
     public String getContraseña(){
         return this.contraseña;
+    }
 
+    static Usuario recuperarUsuario(){
+        Usuario usuario = InicioActivity.usuario;
+        return usuario;
     }
 }

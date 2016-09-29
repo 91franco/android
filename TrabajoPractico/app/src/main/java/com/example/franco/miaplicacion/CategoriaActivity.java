@@ -17,8 +17,8 @@ public class CategoriaActivity extends AppCompatActivity {
 
         List<Categoria> categorias = new ArrayList<Categoria>();
         categorias.add(new Categoria("Fideos","Fideos resorte"));
-        categorias.add(new Categoria("Pan","Pan frances"));
-        categorias.add(new Categoria("Azucar","Azucar negra"));
+        //categorias.add(new Categoria("Pan","Pan frances"));
+        //categorias.add(new Categoria("Azucar","Azucar negra"));
 
         RecyclerView list = (RecyclerView) findViewById(R.id.rvCategoria);
 
@@ -29,8 +29,8 @@ public class CategoriaActivity extends AppCompatActivity {
         list.setAdapter(adapter);
 
 
-        Controlador controlador = new Controlador();
-        Vista vista = new Vista(this,controlador);
+        ControladorCategoria controlador = new ControladorCategoria();
+        VistaCategoria vista = new VistaCategoria(this,controlador);
 
         controlador.setVista(vista);
 

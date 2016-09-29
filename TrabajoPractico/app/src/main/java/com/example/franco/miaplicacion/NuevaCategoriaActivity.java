@@ -10,9 +10,9 @@ public class NuevaCategoriaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nueva_categoria);
 
-        Controlador controlador = new Controlador();
-        Vista vista = new Vista(this,controlador);
+        ControladorNuevaCategoria controladorNuevaCategoria = new ControladorNuevaCategoria();
+        VistaNuevaCategoria vistaNuevaCategoria = new VistaNuevaCategoria(this, controladorNuevaCategoria);
 
-        controlador.setVista(vista);
+        controladorNuevaCategoria.setVistaNuevaCategoria(vistaNuevaCategoria);
     }
 }
