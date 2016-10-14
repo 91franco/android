@@ -55,8 +55,8 @@ public class MainActivity extends AppCompatActivity implements Handler.Callback{
     public boolean handleMessage(Message msg) {
         if(msg.arg1==MENSAJE){
             List<Persona> lista = (List<Persona>) msg.obj;
-            textView.setText(lista.get(0).getNombre().toString()+" " + lista.get(0).getApellido().toString()+" "
-                             + lista.get(0).getTelefono().toString());
+            textView.setText(lista.get(1).getNombre().toString()+" " + lista.get(1).getApellido().toString()+" "
+                             + lista.get(1).getTelefono().toString());
 
         }
         if(msg.arg1==IMAGEN){

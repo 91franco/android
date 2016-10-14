@@ -1,0 +1,6 @@
+<personas>
+<persona name="Pedro" surname="Picapiedra" img="http://www.lslutnfra.com/alumnos/practicas/pedro_pic.jpg">4666-6666</persona>
+<persona name="Pablo" surname="Marmol" img="http://www.lslutnfra.com/alumnos/practicas/pablo_marmol.jpg">4777-7777</persona>
+<persona name="Marty" surname="McFly" img="http://www.lslutnfra.com/alumnos/practicas/marty_mcfly.jpg">4888-8888</persona>
+<persona name="Marcelo" surname="Tinelli" img="http://www.lslutnfra.com/alumnos/practicas/marcelo_tinelli.jpg">4999-9999</persona>
+</personas>

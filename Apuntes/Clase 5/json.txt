@@ -1,0 +1,7 @@
+{"personas":[
+	{"name" : "Pedro", "surname": "Picapiedra", "phone":"4666-6666", "img":"http"},
+	{"name" : "Pablo", "surname": "Marmol", "phone":"4777-7777", "img":"http"},
+	{"name" : "Marty", "surname": "McFly", "phone":"4888-8888", "img":"http"},
+	{"name" : "Marcelo", "surname": "Tinelli", "phone":"4999-9999", "img":"http"}				
+]
+}

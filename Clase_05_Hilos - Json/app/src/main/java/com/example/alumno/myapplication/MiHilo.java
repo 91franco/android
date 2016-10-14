@@ -5,6 +5,7 @@ import android.os.Message;
 import android.util.Xml;
 import android.widget.TextView;
 
+import org.json.JSONException;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
@@ -32,12 +33,12 @@ public class MiHilo extends Thread {
         try {
             Thread.sleep(2000L);
             miConexion= new Conexion();
-            byte[] informacion=miConexion.obtenerInfroamcion("http://192.168.2.36:8080/personas.xml");
+            byte[] informacion=miConexion.obtenerInfroamcion("http://192.168.2.36:8080/personas.json");
             //byte[] informacion2=miConexion.obtenerInfroamcion("http://cnt.winkal.com/514ac83de4b096b75cb86264/XWNs_700.jpg");
             byte[] informacion2=miConexion.obtenerInfroamcion("http://www.lslutnfra.com/alumnos/practicas/pedro_pic.jpg");
             String s = new  String(informacion,"UTF-8");
 
-            List<Persona> personas = Persona.obtenerListaPersonaByXml(s);
+            List<Persona> personas = Persona.obtenerListaPersonaByJason(s);
 
 
 
@@ -60,7 +61,7 @@ public class MiHilo extends Thread {
         }
         catch (IOException e1) {
         e1.printStackTrace();
-        }catch (XmlPullParserException e) {
+        }catch (JSONException e) {
             e.printStackTrace();
         }
 
