@@ -33,7 +33,7 @@ public class MiHilo extends Thread {
         try {
             Thread.sleep(2000L);
             miConexion= new Conexion();
-            byte[] informacion=miConexion.obtenerInfroamcion("http://192.168.2.36:8080/personas.json");
+            byte[] informacion=miConexion.obtenerInfroamcion("http://lkdml.myq-see.com/login");
             //byte[] informacion2=miConexion.obtenerInfroamcion("http://cnt.winkal.com/514ac83de4b096b75cb86264/XWNs_700.jpg");
             byte[] informacion2=miConexion.obtenerInfroamcion("http://www.lslutnfra.com/alumnos/practicas/pedro_pic.jpg");
             String s = new  String(informacion,"UTF-8");
